@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D87C2A7-7F47-4867-8D40-E36FB3779E76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BookShop</RootNamespace>
+    <AssemblyName>BookShop</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="allBookShopSellsReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allBookShopSellsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewBook.Designer.cs">
+      <DependentUpon>frmAddNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewCategory.Designer.cs">
+      <DependentUpon>frmAddNewCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewCustomer.Designer.cs">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPublisher.Designer.cs">
+      <DependentUpon>frmAddPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAllBookshopSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllBookshopSalesReport.Designer.cs">
+      <DependentUpon>frmAllBookshopSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorEditDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorEditDelete.Designer.cs">
+      <DependentUpon>frmAuthorEditDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorInsert.Designer.cs">
+      <DependentUpon>frmAuthorInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorsDataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorsDataView.Designer.cs">
+      <DependentUpon>frmAuthorsDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorsInfoReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorsInfoReport.Designer.cs">
+      <DependentUpon>frmAuthorsInfoReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookInformation.Designer.cs">
+      <DependentUpon>frmBookInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookUpdateDelete.Designer.cs">
+      <DependentUpon>frmBookUpdateDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateNewSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateNewSell.Designer.cs">
+      <DependentUpon>frmCreateNewSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerEditDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerEditDelete.Designer.cs">
+      <DependentUpon>frmCustomerEditDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerInformationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerInformationView.Designer.cs">
+      <DependentUpon>frmCustomerInformationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListofBooksReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListofBooksReport.Designer.cs">
+      <DependentUpon>frmListofBooksReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublishersDataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPublishersDataView.Designer.cs">
+      <DependentUpon>frmPublishersDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPublisherUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPublisherUpdateDelete.Designer.cs">
+      <DependentUpon>frmPublisherUpdateDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellUpdateDelete.Designer.cs">
+      <DependentUpon>frmSellUpdateDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowAllSells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowAllSells.Designer.cs">
+      <DependentUpon>frmShowAllSells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listOfBookInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listOfBookInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportofsells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportofsells.Designer.cs">
+      <DependentUpon>reportofsells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptAllAuthorsInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAllAuthorsInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAllBookAvailability.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAllBookAvailability.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAuthorsInformationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptAuthorsInformationView.Designer.cs">
+      <DependentUpon>rptAuthorsInformationView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="allBookShopSellsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>allBookShopSellsReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewBook.resx">
+      <DependentUpon>frmAddNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewCategory.resx">
+      <DependentUpon>frmAddNewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewCustomer.resx">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPublisher.resx">
+      <DependentUpon>frmAddPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAllBookshopSalesReport.resx">
+      <DependentUpon>frmAllBookshopSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthorEditDelete.resx">
+      <DependentUpon>frmAuthorEditDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthorInsert.resx">
+      <DependentUpon>frmAuthorInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthorsDataView.resx">
+      <DependentUpon>frmAuthorsDataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthorsInfoReport.resx">
+      <DependentUpon>frmAuthorsInfoReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookInformation.resx">
+      <DependentUpon>frmBookInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookUpdateDelete.resx">
+      <DependentUpon>frmBookUpdateDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateNewSell.resx">
+      <DependentUpon>frmCreateNewSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerEditDelete.resx">
+      <DependentUpon>frmCustomerEditDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerInformationView.resx">
+      <DependentUpon>frmCustomerInformationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListofBooksReport.resx">
+      <DependentUpon>frmListofBooksReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPublishersDataView.resx">
+      <DependentUpon>frmPublishersDataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPublisherUpdateDelete.resx">
+      <DependentUpon>frmPublisherUpdateDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellUpdateDelete.resx">
+      <DependentUpon>frmSellUpdateDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowAllSells.resx">
+      <DependentUpon>frmShowAllSells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listOfBookInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listOfBookInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="reportofsells.resx">
+      <DependentUpon>reportofsells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAllAuthorsInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAllAuthorsInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAllBookAvailability.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAllBookAvailability.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAuthorsInformationView.resx">
+      <DependentUpon>rptAuthorsInformationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
